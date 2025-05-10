@@ -28,8 +28,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 //import net.minecraftforge.registries.ForgeRegistries;
 //import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import com.hadrykkxd.chmd.item.ModItems;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(ChaoticDimensions.MOD_ID)
 public class ChaoticDimensions {
     public static final String MOD_ID = "chmd";
@@ -40,6 +40,8 @@ public class ChaoticDimensions {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
 
 
         modEventBus.addListener(this::addCreative);

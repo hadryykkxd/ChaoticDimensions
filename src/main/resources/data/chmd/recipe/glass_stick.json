@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "glasses_items",
+    "category": "misc",
+    "pattern": [
+      "   ",
+      " G ",
+      " G "
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "id": "chmd:glass_stick",
+      "count": 4
+    }
+  }
