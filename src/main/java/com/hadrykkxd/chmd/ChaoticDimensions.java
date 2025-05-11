@@ -29,6 +29,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 //import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import com.hadrykkxd.chmd.item.ModItems;
+import com.hadrykkxd.chmd.item.ModCreativeModeTab;
 
 @Mod(ChaoticDimensions.MOD_ID)
 public class ChaoticDimensions {
@@ -41,8 +42,10 @@ public class ChaoticDimensions {
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
 
+        ModItems.register(modEventBus);
+        ModCreativeModeTab.register(modEventBus);
+        
 
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
