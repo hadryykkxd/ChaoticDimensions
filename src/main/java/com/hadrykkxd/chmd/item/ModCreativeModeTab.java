@@ -8,21 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-/* public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HadryMod.MOD_ID);
-
-    public static final RegistryObject<CreativeModeTab> ALEXANDRITE_ITEMS_TAB = CREATIVE_MOD_TABS.register("alexandrite_items_tab",
-        () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
-        .title(Component.translatable("creativetab.hadrymod.alexandrite_items"))
-            .displayItems((itemDisplayParameters, output) ->{
-                output.accept(ModItems.ALEXANDRITE.get());
-                output.accept(ModItems.RAW_ALEXANDRITE.get());
-                output.accept(ModItems.GLASS_STICK.get());
-
-        }).build());
-
-    public static void register(IEventBus eventBus) { CREATIVE_MOD_TABS.register(eventBus); }
-*/
 
 public class ModCreativeModeTab {  
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TABS = 
@@ -33,6 +18,8 @@ public class ModCreativeModeTab {
     .title(Component.translatable("creativetab.chmd.chmd_items"))
     .displayItems((itemDisplayParameters, output) -> {
         
+        output.accept(ModItems.LITTLE_HEART.get());
+        output.accept(ModItems.CHAOS_CRYSTAL.get());
         output.accept(ModItems.GLASS_STICK.get());
         
     }).build());
