@@ -1,5 +1,6 @@
 package com.hadrykkxd.chmd.item;
 
+import com.hadrykkxd.chmd.block.ModBlocks;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -21,6 +22,7 @@ public class ModCreativeModeTab {
         output.accept(ModItems.LITTLE_HEART.get());
         output.accept(ModItems.CHAOS_CRYSTAL.get());
         output.accept(ModItems.GLASS_STICK.get());
+        output.accept(ModBlocks.CHAOTIC_BLOCK.get());
         
     }).build());
 

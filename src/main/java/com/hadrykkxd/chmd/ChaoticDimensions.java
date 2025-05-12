@@ -1,5 +1,6 @@
 package com.hadrykkxd.chmd;
 
+import com.hadrykkxd.chmd.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 //import net.minecraft.client.Minecraft;
 //import net.minecraft.core.registries.Registries;
@@ -35,7 +36,7 @@ import com.hadrykkxd.chmd.item.ModCreativeModeTab;
 public class ChaoticDimensions {
     public static final String MOD_ID = "chmd";
     public static final Logger LOGGER = LogUtils.getLogger();
-    
+
     public ChaoticDimensions()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -45,7 +46,8 @@ public class ChaoticDimensions {
 
         ModItems.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
-        
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -68,7 +70,6 @@ public class ChaoticDimensions {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            
         }
     }
 }

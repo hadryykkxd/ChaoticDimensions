@@ -1,6 +1,13 @@
 {
     "creativetab.chmd.chmd_items": "Dimensão Caótica Itens",
+
     "item.chmd.glass_stick": "Graveto de Vidro",
     "item.chmd.little_heart": "Pequeno Coração",
-    "item.chmd.chaos_crystal": "Cristal do Caosss"
+    "item.chmd.chaos_crystal": "Cristal do Caosss",
+
+    "block.chmd.chaotic_block": "Bloco do Caos",
+
+    "advancement.chmd.entrada_caotica": "Entrada Caótica",
+    "advancement.chmd.entrada_caotica.desc": "Entrada Caótica."
+
 }

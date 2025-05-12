@@ -1,6 +1,13 @@
 {
     "creativetab.chmd.chmd_items": "Chaotic Dimensions Items",
+
+    "item.chmd.chaos_crystal": "Chaos Crystal",
     "item.chmd.glass_stick": "Glass Stick",
     "item.chmd.little_heart": "Little Heart",
-    "item.chmd.chaos_crystal": "Chaos Crystal"
+
+    "block.chmd.chaotic_block": "Chaotic Block",
+
+    "advancement.chmd.entrada_caotica": "Chaotic Entry",
+    "advancement.chmd.entrada_caotica.desc": "Obtain the first item of Chaos."
+
 }

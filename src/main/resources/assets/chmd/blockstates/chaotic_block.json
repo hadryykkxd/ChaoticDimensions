@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chmd:block/chaotic_block"
+    }
+  }
+}
